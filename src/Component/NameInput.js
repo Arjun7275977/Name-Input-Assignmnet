@@ -3,7 +3,7 @@ import './NameInput.css';
 
 export default function NameInput() {
   const [name, setName] = useState('');
-  const [displayName, setDisplayName] = useState('****');
+  const [displayName, setDisplayName] = useState('');
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -17,7 +17,7 @@ export default function NameInput() {
 
   return (
     <div className="name-input">
-      <h1 className="display-name">Hello, {displayName}!</h1>
+      <h1 className="display-name">Hello how are You {displayName}!</h1>
       <form onSubmit={handleSubmit}>
         <label htmlFor="name-input">Anurag sharma:</label>
         <input type="text" id="name-input" value={name} onChange={handleChange} />

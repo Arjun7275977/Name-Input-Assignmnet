@@ -1,12 +1,11 @@
-
-
 import React from 'react';
-import NameInput from './Component/NameInput';
+import UserList from './Component/UserDetails'
 
 function App() {
   return (
     <div className="App">
-      <NameInput />
+      {/* <NameInput /> */}
+      <UserList/>
     </div>
   );
 }
